@@ -1,0 +1,10 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      GRAPHOPS_ENV: ${GRAPHOPS_ENV:-development}
+    ports:
+      - "${GRAPHOPS_PORT:-8000}:8000"
+    command: ["uvicorn", "graphops_ai.api:app", "--host", "0.0.0.0", "--port", "8000"]

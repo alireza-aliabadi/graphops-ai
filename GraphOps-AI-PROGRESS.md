@@ -305,20 +305,27 @@ graphops-ai/
 
 ## Tasks
 
-- [ ] Create Git repository
-- [ ] Create `README.md`
-- [ ] Create this `PROJECT_PROGRESS.md`
-- [ ] Add `pyproject.toml`
-- [ ] Configure Ruff
-- [ ] Configure pytest
-- [ ] Configure mypy/pyright
-- [ ] Configure pre-commit
-- [ ] Add `.env.example`
-- [ ] Add `.gitignore`
-- [ ] Create Makefile
-- [ ] Add GitHub Actions CI
-- [ ] Add basic health endpoint
-- [ ] Add project architecture diagram
+- [x] Create Git repository
+- [x] Create `README.md`
+- [x] Create this `GraphOps-AI-PROGRESS.md`
+- [x] Add `pyproject.toml`
+- [x] Configure Ruff
+- [x] Configure pytest
+- [x] Configure mypy
+- [x] Configure pre-commit
+- [x] Add `.env.example`
+- [x] Add `.gitignore`
+- [x] Create Makefile
+- [x] Add GitHub Actions CI
+- [x] Add basic health endpoint
+- [x] Add project architecture diagram
+
+## Validation
+
+- [x] `make lint`
+- [x] `make test`
+- [x] `make typecheck`
+- [x] `docker compose config`
 
 ## Initial commands
 
@@ -352,21 +359,19 @@ Create framework-independent domain models.
 
 ## Entities
 
-```text
-Document
-Chunk
-Entity
-Relationship
-Source
-RetrievalResult
-Agent
-AgentTask
-InferenceRequest
-InferenceResponse
-EvaluationSample
-EvaluationResult
-GPUWorkload
-```
+- [x] `Document`
+- [x] `Chunk`
+- [x] `Entity`
+- [x] `Relationship`
+- [x] `Source`
+- [x] `RetrievalResult`
+- [x] `Agent`
+- [x] `AgentTask`
+- [x] `InferenceRequest`
+- [x] `InferenceResponse`
+- [x] `EvaluationSample`
+- [x] `EvaluationResult`
+- [x] `GPUWorkload`
 
 ## Example graph entity
 
@@ -392,10 +397,16 @@ class Relationship:
 
 ## Acceptance criteria
 
-- [ ] Domain models do not depend on FastAPI
-- [ ] Unit tests cover validation
-- [ ] IDs are stable
-- [ ] Source/evidence provenance is retained
+- [x] Domain models do not depend on FastAPI
+- [x] Unit tests cover validation
+- [x] IDs are stable
+- [x] Source/evidence provenance is retained
+
+## Validation
+
+- [x] `make lint`
+- [x] `make test`
+- [x] `make typecheck`
 
 ---
 
@@ -2279,14 +2290,14 @@ Use these as the primary references while implementing:
 
 ## Overall
 
-**0% — Not started**
+**Phases 0–1 complete — 6%**
 
 ## Phase status
 
 | Phase | Component | Status |
 |---|---|---|
-| 0 | Repository bootstrap | ⬜ |
-| 1 | Domain model | ⬜ |
+| 0 | Repository bootstrap | ✅ |
+| 1 | Domain model | ✅ |
 | 2 | Document ingestion | ⬜ |
 | 3 | Embeddings | ⬜ |
 | 4 | Vector RAG baseline | ⬜ |
